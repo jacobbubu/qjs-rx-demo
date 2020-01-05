@@ -1,0 +1,40 @@
+{
+  "name": "@jacobbubu/qjs-rx-demo",
+  "version": "0.0.0",
+  "description": "A sample setup using Rollup to build TypeScript code, and running in quick.js.",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "author": {
+    "name": "Rong Shen",
+    "email": "rong.shen@gmail.com"
+  },
+  "main": "dist/bundle.js",
+  "types": "dist/types/index.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.1.0",
+    "@types/node": "^13.1.4",
+    "prettier": "^1.19.1",
+    "rollup": "^1.28.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "3.7.4"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobbubu/qjs-rx-demo.git"
+  }
+}
